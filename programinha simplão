@@ -15,24 +15,25 @@ int main(void) {
 void cadastro (){
 	static int linha;
 	do{
-		printf("\nDigite seu nome: ");
+		printf("\nDigite seu nome: "); //AQUI ANOTA OS NOMES DAS PESSOAS
 		scanf("%s", &nome[linha]);
-		printf("\nDigite seu email: ");
+		printf("\nDigite seu email: "); //AQUI ANOTA OS EMAILS
 		scanf("%s", &email[linha]);
-		printf("\nDigite seu prontuario: ");
+		printf("\nDigite seu prontuario: "); //AQUI ANOTA OS PRONTUÁRIOS
 		scanf("%d", &pront[linha]);
 		printf("\nDigite '1' para continuar ou outro valor para sair ");
 		scanf("%d", &op);
 		linha++;
 	}while(op==1);
-} //aqui acaba o cadastrooooooo
-void pesquisa(){
+}//AQUI ACABA A PARTE DO CADASTROOOOO
+
+void pesquisa(){ //DAQUI PRA BAIXO É ONDE É POSSÍVEL REALIZAR A PESQUISA NO ""BANCO DE DADOS"" E ACHAR O NOME, PRONTUÁRIO, ETC
 	char nomepesquisa[50];
 	int prontpesquisa;
 	int s;
 	
 	do{
-		printf("\nDigite '1' para pesquisar nome ou '2' para prontuario");
+		printf("\nDigite '1' para pesquisar nome ou '2' para prontuario"); //ONDE ESCOLHE O QUE QUER ACHAR
 		scanf("%d", &op);
 		switch(op){
 			case 1:
